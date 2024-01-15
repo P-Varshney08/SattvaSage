@@ -14,7 +14,7 @@ router.get('/getTerms', async(req, res)=>{
 })
 
 router.post('/getSymptom', async(req, res)=>{
-    console.log('aaya')
+ 
     const {age, gender, symptoms} = req.body;
     const allSymptom = symptoms.split(/s+/);
     console.log('all symptoms: ', allSymptom);
